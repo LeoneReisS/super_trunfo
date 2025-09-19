@@ -5,6 +5,7 @@
         int pontos_tur1, pontos_tur2, populacao1, populacao2; // variáveis de pontos turísticos e populações
         char estado1, estado2; // variáveis do estado
         float area1, area2, PIB1, PIB2; // variáveis de áreas e de PIBs
+        float densidade_pop1, densidade_pop2, PIB_per_capita1, PIB_per_capita2; // variáveis de densidade populacional e PIB per capita
         char nome1[20], nome2[20], codigo1[3], codigo2[3]; // variáveis do nome das cidades e do código das cartas
 
         printf("Dados da Carta 1: \n"); //identificando a Carta 1
@@ -30,6 +31,9 @@
             printf("Digite o número de pontos turísticos: \n"); // entrada do número de pontos turísticos da cidade
             scanf("%i", &pontos_tur1);
 
+            densidade_pop1 = (float) populacao1 / area1; // cálculo da densidade populacional
+            PIB_per_capita1 = (float) PIB1 / populacao1; // cálculo do PIB per capita
+
         printf(" \n"); // espaçamento
 
             printf("Carta 1: \n"); // identificando a saída da Carta 1
@@ -39,7 +43,9 @@
             printf("População: %i \n", populacao1); // saída da papulação da Carta 1
             printf("Área: %.2fkm² \n", area1); //saída da área da Carta 1
             printf("PIB: R$ %.2f \n", PIB1); // saída do PIB da Carta 1
-            printf("Números de pontos turísticos: %i \n\n", pontos_tur1); //saída do número de pontos turísticos da Carta 1
+            printf("Números de pontos turísticos: %i \n", pontos_tur1); //saída do número de pontos turísticos da Carta 1
+            printf("Densidade populacional: %.2f habitantes/km² \n", densidade_pop1);
+            printf("PIB per capita: R$ %.2f \n\n", PIB_per_capita1);
 
 
         printf("Dados da Carta 2: \n"); // identificando a Carta 2
@@ -65,6 +71,9 @@
             printf("Digite o número de pontos turísticos: \n"); // entrada do número de pontos turísticos da cidade
             scanf(" %i", &pontos_tur2);
 
+            densidade_pop2 = (float) populacao2 / area2; // cálculo da densidade populacional
+            PIB_per_capita2 = (float) PIB2 / populacao2; // cálculo do PIB per capita
+
         printf(" \n"); // espaçamento
 
             printf("Carta 2: \n"); // identificando a saída da Carta 1
@@ -74,7 +83,9 @@
             printf("População: %i \n", populacao2); // saída da papulação da Carta 1
             printf("Área: %.2fkm² \n", area2); //saída da área da Carta 1
             printf("PIB: R$ %.2f \n", PIB2); // saída do PIB da Carta 1
-            printf("Números de pontos turísticos: %i \n", pontos_tur1); //saída do número de pontos turísticos da Carta 1
+            printf("Números de pontos turísticos: %i \n", pontos_tur2); //saída do número de pontos turísticos da Carta 1
+            printf("Densidade populacional: %.2f habitantes/km² \n", densidade_pop2);
+            printf("PIB per capita: R$ %.2f \n\n", PIB_per_capita2);
 
         return 0;
     }
