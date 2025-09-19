@@ -44,8 +44,8 @@
             printf("Área: %.2fkm² \n", area1); //saída da área da Carta 1
             printf("PIB: R$ %.2f \n", PIB1); // saída do PIB da Carta 1
             printf("Números de pontos turísticos: %i \n", pontos_tur1); //saída do número de pontos turísticos da Carta 1
-            printf("Densidade populacional: %.2f habitantes/km² \n", densidade_pop1);
-            printf("PIB per capita: R$ %.2f \n\n", PIB_per_capita1);
+            printf("Densidade populacional: %.2f habitantes/km² \n", densidade_pop1); // saída da densidade populacional da Carta 1
+            printf("PIB per capita: R$ %.2f \n\n", PIB_per_capita1); // saída do PIB per capita da Carta 1
 
 
         printf("Dados da Carta 2: \n"); // identificando a Carta 2
@@ -76,16 +76,16 @@
 
         printf(" \n"); // espaçamento
 
-            printf("Carta 2: \n"); // identificando a saída da Carta 1
-            printf("Estado: %c \n", estado2); // saída do estado da Carta 1
-            printf("Código: %s \n", codigo2); // saída do código da Carta 1
-            printf("Nome da cidade: %s \n", nome2); // saída do nome da cidade da Carta 1
-            printf("População: %i \n", populacao2); // saída da papulação da Carta 1
-            printf("Área: %.2fkm² \n", area2); //saída da área da Carta 1
-            printf("PIB: R$ %.2f \n", PIB2); // saída do PIB da Carta 1
-            printf("Números de pontos turísticos: %i \n", pontos_tur2); //saída do número de pontos turísticos da Carta 1
-            printf("Densidade populacional: %.2f habitantes/km² \n", densidade_pop2);
-            printf("PIB per capita: R$ %.2f \n\n", PIB_per_capita2);
+            printf("Carta 2: \n"); // identificando a saída da Carta 2
+            printf("Estado: %c \n", estado2); // saída do estado da Carta 2
+            printf("Código: %s \n", codigo2); // saída do código da Carta 2
+            printf("Nome da cidade: %s \n", nome2); // saída do nome da cidade da Carta 2
+            printf("População: %i \n", populacao2); // saída da papulação da Carta 2
+            printf("Área: %.2fkm² \n", area2); //saída da área da Carta 2
+            printf("PIB: R$ %.2f \n", PIB2); // saída do PIB da Carta 2
+            printf("Números de pontos turísticos: %i \n", pontos_tur2); //saída do número de pontos turísticos da Carta 2
+            printf("Densidade populacional: %.2f habitantes/km² \n", densidade_pop2); // saída da densidade populacional da Carta 2
+            printf("PIB per capita: R$ %.2f \n\n", PIB_per_capita2); // saída do PIB per capita da Carta 2
 
         return 0;
     }
